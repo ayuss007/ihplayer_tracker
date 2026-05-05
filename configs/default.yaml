@@ -1,0 +1,21 @@
+video:
+  input_path: ""
+  output_path: "outputs/tracks.mp4"
+
+models:
+  rf_detr_checkpoint: "checkpoints/rf_detr.pt"
+  parseq_checkpoint: "checkpoints/parseq.pt"
+  use_mask_propagation: true
+
+tracker:
+  max_age: 40
+  min_hits: 3
+  iou_threshold: 0.25
+  motion_weight: 0.55
+  appearance_weight: 0.45
+
+camera_motion:
+  enabled: true
+  orb_features: 1500
+  ecc_iterations: 50
+  ecc_eps: 1.0e-5

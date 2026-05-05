@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ihplayer-tracker"
+version = "0.1.0"
+description = "Dynamic player tracker for ice hockey"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "opencv-python",
+  "torch",
+  "torchvision",
+  "pyyaml",
+  "scipy",
+  "filterpy"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
